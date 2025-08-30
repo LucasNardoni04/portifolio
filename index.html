@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Lucas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -47,26 +48,29 @@
             </div>
         </div>
         <h1 id="contatos">Contatos</h1>
-    </main>
+    
 
-    <footer class="rodape">
-        <div>
+    <div class="rodape">
+        <div class="imagemRodape">
         <p>Acesse meu Whatsapp</p>
-        <img src="img/zap.png" alt="">
+        <a href="https://wa.me/5511999996789"><img src="img/zap.png" alt=""></a>
         </div>
-
-        <div>
+        <div class="formulario">
         <p>Mande uma mensagem</p>
         <input type="text" placeholder="Digite seu nome">
         <br>
         <input type="email" placeholder="Digite o seu email">
         <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
         <br>
-        <button>Enviar</button>
+        <button onclick="envia()">Enviar</button>
         </div>
+    </div>
+    </main>
+
+    <Footer>
         <p>&copy Direitos reservados - Lucas</p>
-    </footer>
+    </Footer>
 
     <script src="script.js"></script>
 </body>
